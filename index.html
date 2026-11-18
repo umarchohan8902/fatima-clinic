@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fatima Clinic | Dental Care in Lahore</title>
+<meta name="description" content="Family dental care in Lahore: checkups, cleaning, fillings, root canals, braces and whitening. Book your appointment today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --enamel:#F6FAF9; --mint:#D3EBE4; --sea:#0E4A4B; --ink:#13292B; --muted:#4D6466; --amber:#F2A93B; --line:#C5DDD6;
+  --head:'Bricolage Grotesque','Trebuchet MS',sans-serif; --body:'Source Sans 3','Segoe UI',Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--enamel);line-height:1.6;font-size:1.05rem}
+h1,h2,h3{font-family:var(--head);line-height:1.1;color:var(--sea)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+section{padding:4.5rem 0}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:1rem}
+.btn{display:inline-block;background:var(--amber);color:var(--ink);font-weight:600;text-decoration:none;padding:.85rem 1.6rem;border-radius:999px;border:0;font:600 1rem var(--body);cursor:pointer}
+.btn:hover{background:#e39a2a}
+.btn.ghost{background:transparent;border:2px solid var(--sea);color:var(--sea)}
+.btn.ghost:hover{background:var(--mint)}
+
+header{position:sticky;top:0;background:rgba(246,250,249,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+.logo{font:800 1.25rem var(--head);color:var(--sea);text-decoration:none}
+nav a{margin-left:1.2rem;text-decoration:none;font-weight:600;color:var(--muted)}
+nav a:hover{color:var(--sea)}
+@media(max-width:640px){nav a:not(.btn){display:none}}
+
+.hero{background:var(--sea);color:#fff;padding:0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;min-height:560px}
+.hero h1{color:#fff;font-size:clamp(2.4rem,6.5vw,4.6rem);font-weight:800;letter-spacing:-.02em}
+.hero p{max-width:34rem;margin:1.2rem 0 2rem;color:#D3EBE4;font-size:1.15rem}
+.hero .actions{display:flex;gap:.8rem;flex-wrap:wrap}
+.hero .btn.ghost{border-color:#D3EBE4;color:#fff}
+.hero .btn.ghost:hover{background:rgba(255,255,255,.1)}
+.tooth{width:100%;max-width:340px;justify-self:center;margin:2rem 0}
+@media(max-width:800px){.hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:3rem;padding-bottom:1rem}.tooth{max-width:200px;order:-1;margin:0}}
+
+.services{background:var(--enamel)}
+.lead{color:var(--muted);max-width:38rem;margin-bottom:2.5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border-top:1px solid var(--line)}
+.svc{padding:1.5rem 1.5rem 1.5rem 0;border-bottom:1px solid var(--line)}
+.svc h3{font-size:1.25rem;margin-bottom:.4rem}
+.svc p{color:var(--muted)}
+.svc b{display:block;margin-top:.6rem;color:var(--sea);font-weight:600}
+
+.doctor{background:var(--mint)}
+.doctor .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:3rem;align-items:center}
+.portrait{aspect-ratio:4/5;background:var(--sea);border-radius:50% 50% 12px 12px;display:grid;place-items:center;color:var(--mint);font:700 5rem var(--head)}
+.facts{list-style:none;padding:0;margin-top:1.2rem}
+.facts li{padding:.5rem 0;border-bottom:1px solid var(--line)}
+@media(max-width:800px){.doctor .wrap{grid-template-columns:1fr}.portrait{max-width:240px}}
+
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+@media(max-width:800px){.visit .wrap{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse;margin:1rem 0 1.5rem}
+td{padding:.55rem 0;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right;font-weight:600}
+form{display:grid;gap:.9rem;background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.5rem}
+label{font-weight:600;font-size:.95rem;display:grid;gap:.3rem}
+input,select,textarea{font:inherit;padding:.7rem .8rem;border:1px solid #9FBDB5;border-radius:8px;background:var(--enamel);color:var(--ink)}
+.note{font-size:.9rem;color:var(--muted)}
+
+footer{background:var(--ink);color:#B5CCC7;padding:2rem 0;text-align:center;font-size:.95rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">Fatima Clinic</a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#doctor">Our dentist</a>
+      <a href="#visit">Timings</a>
+      <a class="btn" href="#book">Book a visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Dental care that doesn't hurt a bit.</h1>
+        <p>Gentle checkups, painless treatments and clear prices for the whole family, in the heart of Lahore.</p>
+        <div class="actions">
+          <a class="btn" href="#book">Book an appointment</a>
+          <a class="btn ghost" href="tel:+924200000000">Call 042-0000-0000</a>
+        </div>
+      </div>
+      <svg class="tooth" viewBox="0 0 200 240" role="img" aria-label="Tooth illustration">
+        <path d="M100 20c-22-14-62-10-72 24-8 28 8 48 14 76 5 26 6 78 24 80 14 1 14-46 34-46s20 47 34 46c18-2 19-54 24-80 6-28 22-48 14-76-10-34-50-38-72-24z" fill="#F6FAF9"/>
+        <path d="M62 52c10-8 24-8 34 0" stroke="#D3EBE4" stroke-width="8" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <h2>What we treat</h2>
+      <p class="lead">Every treatment starts with an exam and a clear explanation of cost before we begin.</p>
+      <div class="grid">
+        <div class="svc"><h3>Checkup and cleaning</h3><p>Scaling, polishing and an oral exam to catch problems early.</p><b>From Rs. 2,500</b></div>
+        <div class="svc"><h3>Fillings</h3><p>Tooth-coloured fillings that match your natural teeth.</p><b>From Rs. 3,000</b></div>
+        <div class="svc"><h3>Root canal</h3><p>Pain relief and tooth saving, usually in one or two visits.</p><b>From Rs. 12,000</b></div>
+        <div class="svc"><h3>Braces and aligners</h3><p>Straighter teeth for teens and adults, with a clear payment plan.</p><b>Consultation is free</b></div>
+        <div class="svc"><h3>Whitening</h3><p>Professional whitening in a single sitting.</p><b>From Rs. 15,000</b></div>
+        <div class="svc"><h3>Children's dentistry</h3><p>Friendly, patient care for kids, including fluoride and sealants.</p><b>From Rs. 2,000</b></div>
+      </div>
+      <p class="note" style="margin-top:1rem">Prices are examples. Final cost is confirmed after examination.</p>
+    </div>
+  </section>
+
+  <section class="doctor" id="doctor">
+    <div class="wrap">
+      <div class="portrait" aria-hidden="true">Dr</div>
+      <div>
+        <h2>Meet Dr. Ayesha Khan</h2>
+        <p>Dr. Ayesha has treated families in Lahore for over ten years. She explains every step in plain language, so you always know what is happening and why.</p>
+        <ul class="facts">
+          <li>BDS, King Edward Medical University</li>
+          <li>Specialises in root canals and cosmetic dentistry</li>
+          <li>Sterilised instruments and single-use items for every patient</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div>
+        <h2>Visit us</h2>
+        <table>
+          <tr><td>Monday to Saturday</td><td>10:00 am to 8:00 pm</td></tr>
+          <tr><td>Sunday</td><td>Emergencies only</td></tr>
+        </table>
+        <p><strong>Address:</strong> 123 Main Boulevard, Gulberg III, Lahore</p>
+        <p><strong>Phone:</strong> <a href="tel:+924200000000">042-0000-0000</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/920000000000">0300-0000000</a></p>
+      </div>
+      <form id="book" aria-label="Appointment request">
+        <h2 style="font-size:1.6rem;margin:0">Request an appointment</h2>
+        <label>Your name<input id="name" required autocomplete="name"></label>
+        <label>Phone number<input id="phone" type="tel" required autocomplete="tel"></label>
+        <label>Treatment
+          <select id="service">
+            <option>Checkup and cleaning</option><option>Filling</option><option>Root canal</option>
+            <option>Braces or aligners</option><option>Whitening</option><option>Child's visit</option><option>Not sure</option>
+          </select>
+        </label>
+        <label>Preferred day and time<input id="when" placeholder="e.g. Saturday evening"></label>
+        <button class="btn" type="submit">Send on WhatsApp</button>
+        <p class="note">This opens WhatsApp with your details filled in. We reply within working hours.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="yr"></span> Fatima Clinic, Lahore. Sample website.</div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // Replace with the clinic's real WhatsApp number (country code, no + or spaces)
+  var WHATSAPP = '920000000000';
+  document.getElementById('book').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var v = function (id) { return document.getElementById(id).value.trim(); };
+    var msg = 'Assalam o Alaikum, I would like to book an appointment.\n' +
+      'Name: ' + v('name') + '\nPhone: ' + v('phone') +
+      '\nTreatment: ' + v('service') + '\nPreferred time: ' + (v('when') || 'Any');
+    window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  });
+</script>
+</body>
+</html>
